@@ -7,7 +7,7 @@ describe "RecipesController", ->
   
   httpBackend = null
   
-  setupController =(keywords)->
+  setupController =(keywords, results)->
     inject(($location, $routeParams, $rootScope, $resource, $httpBackend, $controller)->
       scope       = $rootScope.$new()
       location    = $location
