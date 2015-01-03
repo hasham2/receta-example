@@ -22,6 +22,6 @@ controllers.controller("RecipesController", ['$scope','$routeParams', '$location
       keywords = $routeParams.keywords.toLowerCase()
       $scope.recipes = recipes.filter (recipe)-> recipe.name.toLowerCase().indexOf(keywords) != -1
     else
-      $scope.recipe = []
+      $scope.recipes = []
 
 ])
